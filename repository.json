@@ -1,0 +1,6 @@
+
+{
+    "name": "Broadlink bridge add-on",
+    "url": "https://github.com/lbschenkel/hass-addon-broadlink-bridge",
+    "maintainer": "Leonardo Brondani Schenkel <leonardo@schenkel.net>"
+}
