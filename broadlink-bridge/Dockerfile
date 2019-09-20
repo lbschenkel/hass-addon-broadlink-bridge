@@ -4,7 +4,7 @@ FROM $BUILD_FROM AS build
 RUN apk add git gcc musl-dev libffi-dev openssl-dev
 RUN git clone https://github.com/lbschenkel/broadlink-bridge.git -n /tmp/build \
     && cd /tmp/build \
-    && git checkout "v0.1.1" \
+    && git checkout "v0.1.2" \
     && pip wheel --wheel-dir=/tmp/wheels .
 
 FROM $BUILD_FROM AS runtime
