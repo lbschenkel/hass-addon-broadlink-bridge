@@ -5,7 +5,8 @@ RUN apk add git gcc musl-dev libffi-dev openssl-dev
 RUN git clone https://github.com/lbschenkel/broadlink-bridge.git -n /tmp/build \
     && cd /tmp/build \
     && git checkout "v0.1.6" \
-    && pip wheel --wheel-dir=/tmp/wheels .
+    # install cryptography 3.3.x since newer ones need Rust:
+    && pip wheel --wheel-dir=/tmp/wheels 'cryptography<3.4' .
 
 FROM $BUILD_FROM AS runtime
 ENV LANG C.UTF-8
