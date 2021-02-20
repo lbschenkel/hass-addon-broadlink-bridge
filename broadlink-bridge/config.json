@@ -1,6 +1,6 @@
 {
     "name": "Broadlink bridge",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "slug": "broadlink_bridge",
     "description": "Bridge to Broadlink devices supporting REST, MQTT and LIRC protocols",
     "url": "https://github.com/lbschenkel/hass-addon-broadlink-bridge/blob/master/broadlink-bridge/README.md",
