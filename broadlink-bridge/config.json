@@ -7,7 +7,7 @@
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "services",
     "boot": "auto",
-    "init: false,
+    "init": false,
     "ports": {
       "8780/tcp": 8780,
       "8765/tcp": 8765
